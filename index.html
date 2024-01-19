@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./cssfordropdown//stylefordropdown.css" />
+  </head>
+
+  <body>
+    <nav class="container-fluid shadow-sm sticky-top bg-light">
+      <div class="row">
+        <div class="col-3 col-lg-6">
+          <div class="row navinside displayflex">
+            <div id="home" class="col-12 col-lg-2"><h1>MaynTra</h1></div>
+            <div class="col-10 d-none d-lg-block">
+              <div class="row lilist">
+                <div id="men" class="col-2 men dropdownlist">
+                  MEN
+                  <div class="dropdownList menlist">
+                    <ul>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                    </ul>
+                  </div>
+                </div>
+                <div id="women" class="col-2 women dropdownlist">
+                  WOMEN
+                  <div class="dropdownList womenlist">
+                    <ul>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-2 kid dropdownlist">
+                  KIDS
+                  <div class="dropdownList kidlist">
+                    <ul>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-2 living dropdownlist">
+                  LIVING
+                  <div class="dropdownList livinglist">
+                    <ul>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-2 beautiful dropdownlist">
+                  BEAUTI
+                  <div class="dropdownList beautifullist">
+                    <ul>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-2 studios dropdownlist">
+                  STUDIOS
+                  <div class="dropdownList studioslist">
+                    <ul>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-9 col-lg-6 displayflex">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-8 col-10">
+                <input
+                  type="search"
+                  placeholder="search"
+                  class="py-1 px-2 rounded input-group"
+                  name=""
+                  id=""
+                />
+              </div>
+              <div class="col-lg-4 col-2">
+                <div></div>
+                <div class="container-fluid d-none d-lg-block">
+                  <div class="row icons">
+                    <div class="col-4">
+                      <i class="fa-regular fa-user fs-5 text"></i>
+                    </div>
+                    <div class="col-4">
+                      <i class="fa-regular fa-heart fs-5 text"></i>
+                    </div>
+                    <div class="col-4">
+                      <i class="fa-solid fa-bag-shopping fs-5 text"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="container-fluid d-block d-lg-none">
+                  <div class="row">
+                    <div class="col-12" id="sidebartogle">
+                      <i class="fa-solid fa-bars"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <ul class="d-block d-lg-none sidebar">
+      <li class="text-dark" id="menformobile">Home</li>
+      <li class="text-dark">Men</li>
+      <li class="text-dark">Women</li>
+      <li class="text-dark">Kids</li>
+      <li class="text-dark">Living</li>
+      <li class="text-dark">Beauti</li>
+      <li class="text-dark">Studio</li>
+    </ul>
+
+    <!-- slider -->
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./imges/slider1.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./imges/slider1.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./imges/slider1.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- slider -->
+
+    <main>
+      <h2 class="HEADINGH2">TRANDING SHIRTS FOR MEN</h2>
+      <div class="container">
+        <div class="row" id="cardlist"></div>
+      </div>
+
+      <h2 class="HEADINGH2">TRANDING JEANS</h2>
+      <div class="container">
+        <div class="row" id="cardlistforjeans"></div>
+      </div>
+
+      <h2 class="HEADINGH2">TRANDING SHIRTS</h2>
+      <div class="container">
+        <div class="row" id="cardlistwomen"></div>
+      </div>
+    </main>
+
+    <footer
+      class="container-fluid"
+      style="background-color: rgb(24, 24, 56); color: white; "
+    >
+      <!-- footer for mobilephone  view -->
+      <div class="container d-lg-none">
+        <ul class="container">
+          <li class="border-bottom">Home</li>
+          <li class="border-bottom">Contact</li>
+          <li class="border-bottom">Services</li>
+          <li class="border-bottom">Services</li>
+          <li class="border-bottom">Services</li>
+          <li class="border-bottom">Services</li>
+        </ul>
+      </div>
+
+      <!-- footer for desktop  view -->
+
+      <div class="container d-none d-lg-block">
+        <div class="row">
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3">
+                <ul>
+                  <li>Contact Us</li>
+                  <li>About Us</li>
+                  <li>Career</li>
+                  <li>Stories</li>
+                  <li>Press</li>
+                  <li>Cleartrip</li>
+                  <li>Corporat</li>
+                </ul>
+              </div>
+              <div class="col-3">
+                <ul>
+                  <li>Contact Us</li>
+                  <li>About Us</li>
+                  <li>Career</li>
+                  <li>Stories</li>
+                  <li>Press</li>
+                  <li>Cleartrip</li>
+                  <li>Corporat</li>
+                </ul>
+              </div>
+              <div class="col-3">
+                <ul>
+                  <li>Contact Us</li>
+                  <li>About Us</li>
+                  <li>Career</li>
+                  <li>Stories</li>
+                  <li>Press</li>
+                  <li>Cleartrip</li>
+                  <li>Corpor</li>
+                </ul>
+              </div>
+              <div class="col-3">
+                <ul>
+                  <li>Contact Us</li>
+                  <li>About Us</li>
+                  <li>Career</li>
+                  <li>Stories</li>
+                  <li>Press</li>
+                  <li>Cleartrip</li>
+                  <li>Corporate</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row">
+              <div class="col-6">
+                <ul>
+                  <li>
+                    Flipkart Internet Private Limited, Buildings Alyssa, Begonia
+                    & Clove Embassy Tech Village, Outer Ring Road,
+                    Devarabeesanahalli Village, Bengaluru, 560103, Karnataka,
+                    India
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <ul>
+                  <li>
+                    Flipkart Internet Private Limited, Buildings Alyssa, Begonia
+                    & Clove Embassy Tech Village, Outer Ring Road,
+                    Devarabeesanahalli Village, Bengaluru, 560103, Karnataka,
+                    India CIN : U51109KA2012PTC066107 Telephone: 044-45614700
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container-fluid border-top d-lg-block d-none"
+        style="padding-top: 30px; padding-bottom: 20px"
+      >
+        <div class="d-flex align-content-center justify-content-center gap-3">
+          <div>Become a Seller</div>
+          <div>Advertise</div>
+          <div>Gift Cards</div>
+          <div>Help Center</div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/24abdde451.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $.ajax({
+          url: `https://myapiforaries.onrender.com/furniture/getitem?categary=shirt&order=1&limit=4&page=2`,
+          method: "GET",
+          dataType: "json",
+          success: function (data) {
+            // Process the received data and display it on the page
+            displayFurnitureItems(data);
+          },
+          error: function (error) {
+            console.error("Error fetching data:", error);
+          },
+        });
+
+        $.ajax({
+          url: `https://myapiforaries.onrender.com/furniture/getitem?categary=jeans&order=1&limit=4&page=1`,
+          method: "GET",
+          dataType: "json",
+          success: function (data) {
+            // Process the received data and display it on the page
+            displayjeans(data);
+          },
+          error: function (error) {
+            console.error("Error fetching data:", error);
+          },
+        });
+
+        function displayjeans(items) {
+          var jeanslist = $("#cardlistforjeans");
+
+          // Clear existing content
+          jeanslist.empty();
+
+          // Loop through the items and create HTML elements to display them
+          $.each(items, function (index, item) {
+            var cardHtml = `
+      <a class="col-6 col-lg-3" href="sgp.html?id=${item._id}">
+            <div class="card cardimages">
+              <img
+                src=${item.url}
+                class="card-img-top"
+                alt="img"
+              />
+              <div class="card-body">
+                <h5 class="card-title">${item.name}</h5>
+                <p class="card-text" style="font-size: 0.7rem">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </div>
+          </a>
+  
+
+`;
+            jeanslist.append(cardHtml);
+          });
+        }
+
+        function displayFurnitureItems(items) {
+          var furnitureList = $("#cardlist");
+
+          // Clear existing content
+          furnitureList.empty();
+
+          // Loop through the items and create HTML elements to display them
+          $.each(items, function (index, item) {
+            var cardHtml = `
+      <a class="col-6 col-lg-3" href="sgp.html?id=${item._id}">
+            <div class="card cardimages">
+              <img
+                src=${item.url}
+                class="card-img-top"
+                alt="img"
+              />
+              <div class="card-body">
+                <h5 class="card-title">${item.name}</h5>
+                <p class="card-text" style="font-size: 0.7rem">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </div>
+          </a>
+  
+
+`;
+            furnitureList.append(cardHtml);
+          });
+        }
+
+        $.ajax({
+          url: `https://myapiforaries.onrender.com/furniture/getitem?categary=shirt&order=1&limit=4&page=1`,
+          method: "GET",
+          dataType: "json",
+          success: function (data) {
+            // Process the received data and display it on the page
+            displaylistofwomem(data);
+          },
+          error: function (error) {
+            console.error("Error fetching data:", error);
+          },
+        });
+
+        function displaylistofwomem(items) {
+          var furnitureList = $("#cardlistwomen");
+
+          // Clear existing content
+          furnitureList.empty();
+
+          // Loop through the items and create HTML elements to display them
+          $.each(items, function (index, item) {
+            var cardHtml = `
+      <a class="col-6 col-lg-3" href="sgp.html?id=${item._id}" >
+            <div class="card cardimages">
+              <img
+                src=${item.url}
+                class="card-img-top"
+                alt="img"
+              />
+              <div class="card-body">
+                <h5 class="card-title">${item.name}</h5>
+                <p class="card-text" style="font-size: 0.7rem">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </div>
+          </a>
+  
+
+`;
+            furnitureList.append(cardHtml);
+          });
+        }
+
+        $("#men").on("click", function () {
+          window.location.href = "mens.html";
+        });
+
+        $("#menformobile").on("click", function () {
+          window.location.href = "mens.html";
+        });
+
+        $("#home").on("click", function () {
+          window.location.href = "index.html";
+        });
+
+        $("#sidebartogle").on("click", togl);
+
+        let t = false;
+        function togl() {
+          t = !t;
+          $(".sidebar").animate({ height: t ? "300px" : "0" }, 500);
+        }
+      });
+    </script>
+  </body>
+</html>

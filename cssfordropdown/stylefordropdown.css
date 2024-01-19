@@ -1,0 +1,138 @@
+.dropdownlist {
+  cursor: pointer;
+  position: relative;
+}
+.cardpart {
+  margin-top: 10px;
+}
+.dropdownlist:hover {
+  color: blue;
+}
+
+.dropdownList {
+  position: absolute;
+
+  padding: 5px;
+
+  width: 200px;
+
+  display: none;
+}
+.dropdownList ul {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  background-color: white;
+  padding: 10px;
+}
+.dropdownList ul li {
+  color: black;
+  font-size: 14px;
+}
+.dropdownList ul li:hover {
+  cursor: pointer;
+  color: rgb(30, 30, 255);
+}
+.men:hover .menlist {
+  display: block;
+}
+.women:hover .womenlist {
+  display: block;
+}
+.kid:hover .kidlist {
+  display: block;
+}
+.living:hover .livinglist {
+  display: block;
+}
+
+.beautiful:hover .beautifullist {
+  display: block;
+}
+.studios:hover .studioslist {
+  display: block;
+}
+
+.sidebar {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  height: 0px;
+  position: fixed;
+  z-index: 30000;
+  top: 70px;
+}
+
+.lilist {
+  font-size: 0.81rem;
+  font-weight: bold;
+  opacity: 0.9;
+}
+h1 {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.navinside {
+  height: 70px;
+}
+
+.displayflex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.borderstyle {
+  border: 1px solid red;
+}
+/* .icons{
+        font-size: 25px;
+      } */
+input {
+  outline: none;
+  border: none;
+
+  background-color: rgb(219, 219, 219);
+}
+.HEADINGH2 {
+  margin-left: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+ul {
+  list-style: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  letter-spacing: 0.01rem;
+}
+ul li {
+  color: white;
+  font-size: 0.7rem;
+  cursor: pointer;
+  line-height: 20px;
+  height: 25px;
+}
+ul li:hover {
+  text-decoration: overline;
+}
+.leftsidemenue {
+  padding-top: 5px;
+}
+.leftsidemenue div {
+  border: 1px solid blue;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 7px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+}
+.leftsidemenue div:hover {
+  background-color: blue;
+  color: white;
+}
+a {
+  text-decoration: none;
+}

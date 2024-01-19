@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./cssfordropdown//stylefordropdown.css" />
+  </head>
+  <body>
+    <nav class="container-fluid shadow-sm sticky-top bg-light">
+      <div class="row">
+        <div class="col-3 col-lg-6">
+          <div class="row navinside displayflex">
+            <div class="col-12 col-lg-2"><h1 id="home">MaynTra</h1></div>
+            <div class="col-10 d-none d-lg-block">
+              <div class="row lilist">
+                <div class="col-2 men dropdownlist" id="men">
+                  MEN
+                  <div class="dropdownList menlist">
+                    <ul>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-2 women dropdownlist">
+                  WOMEN
+                  <div class="dropdownList womenlist">
+                    <ul>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-2 kid dropdownlist">
+                  KIDS
+                  <div class="dropdownList kidlist">
+                    <ul>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-2 living dropdownlist">
+                  LIVING
+                  <div class="dropdownList livinglist">
+                    <ul>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-2 beautiful dropdownlist">
+                  BEAUTI
+                  <div class="dropdownList beautifullist">
+                    <ul>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-2 studios dropdownlist">
+                  STUDIOS
+                  <div class="dropdownList studioslist">
+                    <ul>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                      <li>list of items</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-9 col-lg-6 displayflex">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-8 col-10">
+                <input
+                  type="search"
+                  placeholder="search"
+                  class="py-1 px-2 rounded input-group"
+                  name=""
+                  id=""
+                />
+              </div>
+              <div class="col-lg-4 col-2">
+                <div></div>
+                <div class="container-fluid d-none d-lg-block">
+                  <div class="row icons">
+                    <div class="col-4">
+                      <i class="fa-regular fa-user fs-5 text"></i>
+                    </div>
+                    <div class="col-4">
+                      <i class="fa-regular fa-heart fs-5 text"></i>
+                    </div>
+                    <div class="col-4">
+                      <i class="fa-solid fa-bag-shopping fs-5 text"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="container-fluid d-block d-lg-none">
+                  <div class="row">
+                    <div class="col-12" id="sidebartogle">
+                      <i class="fa-solid fa-bars"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <ul class="d-clock d-lg-none sidebar">
+      <li class="text-dark">Homw</li>
+      <li class="text-dark">Men</li>
+      <li class="text-dark">Women</li>
+      <li class="text-dark">Kids</li>
+      <li class="text-dark">Living</li>
+      <li class="text-dark">Beauti</li>
+      <li class="text-dark">Studio</li>
+    </ul>
+    <div class="container" style="padding-top: 60px; padding-bottom: 60px">
+      <div class="row">
+        <div class="col-4" id="main"></div>
+        <div
+          class="col-8"
+          style="
+            align-items: center;
+            justify-content: center;
+            padding-top: 20px;
+          "
+        >
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
+            dolore perferendis tempore animi accusantium aliquid eligendi?
+            Animi, deleniti sint praesentium, deserunt maxime nobis illum
+            laboriosam autem corrupti veritatis, quia dolores.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="container-fluid"
+      style="background-color: rgb(24, 24, 56); color: white"
+    >
+      <!-- footer for mobilephone  view -->
+      <div class="container d-lg-none">
+        <ul class="container">
+          <li class="border-bottom">Home</li>
+          <li class="border-bottom">Contact</li>
+          <li class="border-bottom">Services</li>
+          <li class="border-bottom">Services</li>
+          <li class="border-bottom">Services</li>
+          <li class="border-bottom">Services</li>
+        </ul>
+      </div>
+
+      <!-- footer for desktop  view -->
+
+      <div class="container d-none d-lg-block">
+        <div class="row">
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3">
+                <ul>
+                  <li>Contact Us</li>
+                  <li>About Us</li>
+                  <li>Career</li>
+                  <li>Stories</li>
+                  <li>Press</li>
+                  <li>Cleartrip</li>
+                  <li>Corporat</li>
+                </ul>
+              </div>
+              <div class="col-3">
+                <ul>
+                  <li>Contact Us</li>
+                  <li>About Us</li>
+                  <li>Career</li>
+                  <li>Stories</li>
+                  <li>Press</li>
+                  <li>Cleartrip</li>
+                  <li>Corporat</li>
+                </ul>
+              </div>
+              <div class="col-3">
+                <ul>
+                  <li>Contact Us</li>
+                  <li>About Us</li>
+                  <li>Career</li>
+                  <li>Stories</li>
+                  <li>Press</li>
+                  <li>Cleartrip</li>
+                  <li>Corpor</li>
+                </ul>
+              </div>
+              <div class="col-3">
+                <ul>
+                  <li>Contact Us</li>
+                  <li>About Us</li>
+                  <li>Career</li>
+                  <li>Stories</li>
+                  <li>Press</li>
+                  <li>Cleartrip</li>
+                  <li>Corporate</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row">
+              <div class="col-6">
+                <ul>
+                  <li>
+                    Flipkart Internet Private Limited, Buildings Alyssa, Begonia
+                    & Clove Embassy Tech Village, Outer Ring Road,
+                    Devarabeesanahalli Village, Bengaluru, 560103, Karnataka,
+                    India
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <ul>
+                  <li>
+                    Flipkart Internet Private Limited, Buildings Alyssa, Begonia
+                    & Clove Embassy Tech Village, Outer Ring Road,
+                    Devarabeesanahalli Village, Bengaluru, 560103, Karnataka,
+                    India CIN : U51109KA2012PTC066107 Telephone: 044-45614700
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container-fluid border-top d-lg-block d-none"
+        style="padding-top: 30px; padding-bottom: 20px"
+      >
+        <div class="d-flex align-content-center justify-content-center gap-3">
+          <div>Become a Seller</div>
+          <div>Advertise</div>
+          <div>Gift Cards</div>
+          <div>Help Center</div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/24abdde451.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        var queryString = window.location.search.split("=");
+        var id = queryString[1];
+
+        $.ajax({
+          url: `http://localhost:8080/furniture/getitem?id=${id}`,
+          method: "GET",
+          dataType: "json",
+          success: function (data) {
+            // Process the received data and display it on the page
+            displayFurnitureItems(data);
+          },
+          error: function (error) {
+            console.error("Error fetching data:", error);
+          },
+        });
+
+        function displayFurnitureItems(items) {
+          var furnitureList = $("#main");
+
+          // Clear existing content
+          furnitureList.empty();
+
+          // Loop through the items and create HTML elements to display them
+          $.each(items, function (index, item) {
+            var cardHtml = `
+        <a class="card" style="width: 18rem;" href="sgp.html?id=${item._id}">
+    <div class="card cardimages">
+      <img
+        src=${item.url}
+        class="card-img-top"
+        alt="img"
+      />
+      <div class="card-body">
+        
+
+        <h5 class="card-title">${item.name}</h5>
+
+
+        <div class="container overflow-hidden text-center border-top">
+  <div class="row gx-5">
+    <div class="col">
+     <div class="p-3">Price  ${item.price}</div>
+    </div>
+    <div class="col">
+      <div class="p-3">Rating  ${item.rating}</div>
+    </div>
+  </div>
+</div>
+
+        
+        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+      </div>
+    </div>
+  </a>
+      `;
+            furnitureList.append(cardHtml);
+          });
+        }
+
+        $("#men").on("click", function () {
+          window.location.href = "mens.html";
+        });
+        $("#home").on("click", function () {
+          window.location.href = "index.html";
+        });
+        $("#sidebartogle").on("click", togl);
+
+        let t = false;
+        function togl() {
+          console.log("okkkkkkkkkkkkkkkkk");
+          t = !t;
+          $(".sidebar").animate({ height: t ? "300px" : "0" }, 500);
+        }
+      });
+    </script>
+  </body>
+</html>
